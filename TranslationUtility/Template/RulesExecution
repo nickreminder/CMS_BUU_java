@@ -1,0 +1,13 @@
+Step 1:
+{54172= ISA
+	{=QHPID OR GS
+		{
+		37597120<POLICY_NUMBER or BEM>=[DataLocation [date=0, time=0, startLocation=3816, numberOfLines=3]],
+		37004946=[DataLocation [date=0, time=0, startLocation=2283, numberOfLines=2]],
+		37205202=[DataLocation [date=0, time=0, startLocation=6179, numberOfLines=4]]
+		}
+	}
+}
+
+Derive rule:
+<Name>Nahshan St Bernard</Name>

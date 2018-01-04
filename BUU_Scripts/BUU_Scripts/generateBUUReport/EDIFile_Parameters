@@ -1,0 +1,9 @@
+FlatFile="$(echo "cat /Report/FlatFileSummary/FlatFile/text()" | xmllint --nocdata --shell "$1" | sed '1d;$d' | cut -d '.' -f 3,4)" 
+TranslationFIle="$(echo "cat /Report/IssuersReport/IssuerSummary/TranslationFile/text()" | xmllint --nocdata --shell "$1" | sed '1d;$d'| cut -d '.' -f 3,4)"
+ReportFile="$(echo "basefile $1"| cut -d '.' -f 3,4)"
+EDISuccess="$(echo "cat /Report/IssuersReport/IssuerSummary/NumberOfHouseHold/text()" | xmllint --nocdata --shell "$1" | sed '1d;$d')"
+MIDASSuccess="$(echo "cat /Report/FlatFileSummary/NumberOfHouseHold/text()" | xmllint --nocdata --shell "$1" | sed '1d;$d')"
+#NumberOfMembers="$(echo "cat /Report/IssuersReport/IssuerSummary/NumberOfMembers/text()" | xmllint --nocdata --shell "$1" | sed '1d;$d')"
+EDIFailed="$(echo "`expr $MIDASSuccess - $EDISuccess`" )"
+echo "$FlatFile,$TranslationFIle,$ReportFile,,$EDISuccess,$EDIFailed"
+

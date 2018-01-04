@@ -1,0 +1,13 @@
+## This is the property used to configure the propeties files.
+PROPERTIES_FILES="props/EFT_moveBetweenEDI.prop props/MIDAS_moveBetweenEDI.prop"
+#
+## This is the value that should be used witin the properties files to make it enabled.
+ENABLED_VARIABLE="TRUE"
+#
+## Seperator that should be used in properties files to seperate source and destination
+SOURCE_DESTIONATION_SEPERATOR="="
+#
+## path to log file
+SOURCE_LOG_PATH_FILE=logs/moveBetweenEDIAndGluster_"`date +%Y%m%d`".log
+#
+#

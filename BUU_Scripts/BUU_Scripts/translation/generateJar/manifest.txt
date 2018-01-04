@@ -1,0 +1,6 @@
+main-Class: com.edi.translation.generation.Generator
+SoftwareVersion: 5.6
+Description: This software is used to translated a flat file to X12
+Author: Parimanshu Uniyal
+X12TemplateVersion: 7.13
+XMLTemplateVersion: 0.22
